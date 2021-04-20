@@ -27,12 +27,10 @@ class _DateTimeRollerState extends State<DateTimeRoller> {
   }
 
   _fillDateMap() {
-    for (var i = 0; i < 10; i++) {
-      dates['$i'] = [];
-      for (var j = 0; j < Random().nextInt(10); j++) {
-        dates['$i'].add('$j');
-      }
-    }
+    dates['A'] = ['0', '1', '2'];
+    dates['B'] = ['0'];
+    dates['C'] = ['0', '1', '2', '3'];
+    dates['D'] = ['0', '1'];
 
     setState(() {});
   }
